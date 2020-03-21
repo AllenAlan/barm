@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.barm.archetypes</groupId>
+  <artifactId>archetypes-archetype</artifactId>
+  <version>1.0.1-RELEASE</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>archetypes-archetype</name>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>3.1.2</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <description>Demo project for Spring Boot</description>
+
+  <url>https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/archetypes</url>
+
+  <developers>
+    <developer>
+      <id>barm</id>
+      <name>AllenAlan</name>
+      <email>AllenAlan@139.com</email>
+      <url>https://www.cnblogs.com/allennote/</url>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/spring-projects/spring-boot/spring-boot-starter-parent/archetypes</url>
+  </scm>
+</project>

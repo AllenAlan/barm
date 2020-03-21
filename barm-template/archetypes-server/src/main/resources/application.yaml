@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: barm-archetypes
+  cloud:
+    inetutils:
+      preferred-networks: 192.168
+    nacos: # 注册中心
+      discovery:
+        server-addr: 192.168.31.219:8848
+  datasource:
+    url: jdbc:mysql://192.168.31.219:3306/barm_archetypes?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: flag
+      id-type: auto
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.barm.archetypes.data
+
+logging:
+  level:
+    cn:
+      iocoder:
+        springboot:
+          lab12:
+            mybatis:
+              mapper: debug
+
+dubbo:
+  application:
+    name: barm-archetypes
+  scan:
+    base-packages: com.barm.archetypes.core.provider # Dubbo 服务实现类的扫描基准包
+  protocols: # 服务暴露的协议配置
+    dubbo:
+      name: dubbo # 选用 dubbo 协议
+      port: -1 # 协议端口, -1 表示从 20880 开始自增端口
+  registry: # Dubbo 服务注册中心配置, 对应 RegistryConfig 类
+    address: spring-cloud://192.168.31.219:8848
+  cloud:
+    subscribed-services: barm-tree
+  provider: # Dubbo 服务端配置
+    cluster: failfast # 集群方式,可选: failover/failfast/failsafe/failback/forking
+    retries: 0 # 远程服务调用重试次数, 不包括第一次调用, 不需要重试请设为0
+    timeout: 600000 # 远程服务调用超时时间(毫秒)
+    token: true # 令牌验证, 为空表示不开启, 如果为true, 表示随机生成动态令牌
+    dynamic: true # 服务是否动态注册, 如果设为false, 注册后将显示后disable状态, 需人工启用, 并且服务提供者停止时, 也不会自动取消册, 需人工禁用. 
+    delay: -1 # 延迟注册服务时间(毫秒)- , 设为-1时, 表示延迟到Spring容器初始化完成时暴露服务
+    version: 1.0.0 # 服务版本
+    validation: true # 是否启用JSR303标准注解验证, 如果启用, 将对方法参数上的注解进行校验
+    filter: -exception # 服务提供方远程调用过程拦截器名称, 多个名称用逗号分隔
+  consumer: # Dubbo 消费端配置
+    check: false
+    validation: true # 是否启用JSR303标准注解验证, 如果启用, 将对方法参数上的注解进行校验
+    version: 1.0.0 # 默认版本
+server:
+  port: 8081

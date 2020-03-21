@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.4.RELEASE</version>
+    </parent>
+    <groupId>com.barm.archetypes</groupId>
+    <artifactId>archetypes</artifactId>
+    <version>1.0.1-RELEASE</version>
+    <name>${project.artifactId}</name>
+    <description>Demo project for Spring Boot</description>
+
+    <developers>
+        <developer>
+            <id>barm</id>
+            <name>AllenAlan</name>
+            <email>AllenAlan@139.com</email>
+            <url>https://www.cnblogs.com/allennote/</url>
+        </developer>
+    </developers>
+    <packaging>pom</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <barm.common.version>1.0.1-SNAPSHOT</barm.common.version>
+        <barm.version>1.0.1-RELEASE</barm.version>
+        <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
+        <spring.cloud.version>Hoxton.SR2</spring.cloud.version>
+        <spring.cloud.alibaba.version>2.2.0.RELEASE</spring.cloud.alibaba.version>
+        <commons.lang3.version>3.7</commons.lang3.version>
+        <validation.api.version>2.0.1.Final</validation.api.version>
+        <javax.el.version>3.0.1-b11</javax.el.version>
+        <mybatis.plus.version>3.2.0</mybatis.plus.version>
+        <mysql.version>5.1.48</mysql.version>
+        <springboot.pagehelper.version>1.2.13</springboot.pagehelper.version>
+        <pagehelper.version>5.1.11</pagehelper.version>
+        <org.mapstruct.version>1.3.1.Final</org.mapstruct.version>
+        <barm.tree.version>1.0.0-RELEASE</barm.tree.version>
+    </properties>
+
+    <modules>
+        <module>archetypes-api</module>
+        <module>archetypes-core</module>
+        <module>archetypes-data</module>
+        <module>archetypes-server</module>
+        <module>archetypes-util</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- barm common-->
+            <dependency>
+                <groupId>com.barm.common</groupId>
+                <artifactId>common</artifactId>
+                <version>${barm.common.version}</version>
+            </dependency>
+            <!--barm demo -->
+            <dependency>
+                <groupId>com.barm.archetypes</groupId>
+                <artifactId>archetypes-api</artifactId>
+                <version>${barm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.barm.archetypes</groupId>
+                <artifactId>archetypes-core</artifactId>
+                <version>${barm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.barm.archetypes</groupId>
+                <artifactId>archetypes-data</artifactId>
+                <version>${barm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.barm.archetypes</groupId>
+                <artifactId>archetypes-server</artifactId>
+                <version>${barm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.barm.archetypes</groupId>
+                <artifactId>archetypes-util</artifactId>
+                <version>${barm.version}</version>
+            </dependency>
+
+            <!-- commons-lang3 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+            <!-- validation -->
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${validation.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>javax.el</artifactId>
+                <version>${javax.el.version}</version>
+            </dependency>
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <!-- orm mybatis-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>${mybatis.plus.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <!-- pagehelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${springboot.pagehelper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!-- distributed ID -->
+            <dependency>
+                <groupId>com.barm.tree</groupId>
+                <artifactId>tree-api</artifactId>
+                <version>${barm.tree.version}</version>
+            </dependency>
+            <!-- mapstruct-->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${org.mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${org.mapstruct.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!--spring cloud-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- common dependency-->
+        <dependency>
+            <groupId>com.barm.common</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- validation -->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.el</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>

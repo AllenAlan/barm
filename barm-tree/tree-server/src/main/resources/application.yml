@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: barm-tree
+  cloud:
+    inetutils:
+      preferred-networks: 192.168.31.219
+    nacos:
+      discovery:
+        server-addr: 192.168.31.219:8848
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+
+logging:
+  level:
+    cn:
+      iocoder:
+        springboot:
+          lab12:
+            mybatis:
+              mapper: debug
+
+dubbo:
+  application:
+    name: barm-tree
+  scan:
+    base-packages: com.barm
+  protocols:
+    dubbo:
+      name: dubbo
+      port: 20700
+  registry:
+    address: spring-cloud://192.168.31.219:8848
+  provider:
+    cluster: failfast
+    retries: 0
+    timeout: 600000
+    dynamic: true
+    delay: -1
+    version: 1.0.0
+    validation: true
+    filter: -exception
+
+server:
+  port: 8711

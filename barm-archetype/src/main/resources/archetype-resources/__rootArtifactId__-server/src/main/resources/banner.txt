@@ -1,0 +1,29 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+                             DEEE.. E .EEee ...EE .EKEE......EEEEEE
+                          E............... f. .EK..EK..... .... E ..EE
+                        EL ......... .....  ... K.. E........... ..;EEEE
+                       E .... ....... .. .....    E     ...EE.i:.E. .  .EE
+                       E,... ....   E..ii;:..K...,EEEE .EEEiKE EEEEE  .EE
+                        EE...   . KEEEEEED KEEEEEEEEEEEEEEEKL;i,EE,EEEE
+                          EKE.....KEfEDtttEEKEEEEEiiEi;. EEEiiEEED EE.EEEEEEEKtfE E
+                          EKE..:..KEfEGtttEEKEEEEEiiEi;..EEKiiEEEK.EE.    . . ..... EE
+                          E;E.....KEfEftttEEKEEEEEiiEii..EEGiiEEEK EE.fEEEEEED,i... . E
+                          E E.....KEfEftttEEKEEEEKiiEii, EEtiiEEEE;KE:EEE;   :EK.  E.KKE
+                          E..EE  EEEfEftttEEKEEEEEifEiii.KEiiiEEtE;jEE          E  K i E
+                          E..EEEEEEEfEftttEEKEEEEEiiEiii.KEiiiEEfE;;EE          EG L...EL
+                         iE .EDEEEEEfEftttEEKEEEEEiiEi;i,KEiiiEEEE,.E           EEi... EE
+                         fE..EDEEEEEfEfttfEEKEEEEEiiEi,i;KEiiiEEEE,.E           EEi....EE
+                         GE .EDEEEEEfEfttjEEKEEEEEiiEi,iiKEiiiEEDE,.E           EEi .. EE
+                         DE .EEEEEEEfEftttEEKEEEEEiiEi,iiEEiiiEEGE,.E           EEi  ..EK
+                         EE .EKEEEEEfEftttEEKEEEEEiiEi,iiEEtiiEEGE:.EK          EGi ...EL
+                         KE .EKEEEEEfEfjttEEKEEEEEiiEi:iiEEjiiEEfE: EE          E i. ..E
+                         KE .EKEEEEEfEfjttEEKEEEEEiiEi:iiEEfiiEEtE: EEj        KE.i. ..E
+                         KE..EKEEEEEfEfjttEEKEEEEEfiEi.iiEEGiiEE;E..EEE        EEEi.f; E
+                         KE .EEEEEEEfELfttEEKEEEEEiiEi.iiEEDiiEE:EE:.E.EEEEE  EEE E; Ei
+                         KE. EE EEEEEEEfttEEKEEEEEiiEiiiiEiEiiEE.EE..E.:,EEEEEEEEEEE
+                         KE .EE EEEEEEfttEEKEEEEEiiEiiiiEiEiiEE.EE..E.EKEKKEKKKD
+                         KE .EE.EEEEEEfttEEKEEEEEiiEiiiiEiEiiEE EE. EEEEEE
+                          E  EEEDfffEEfttfEDtiiiiiEEifiiEKiiiiKEE,..EK
+                             EEEEEEL. .EEEEEEEEEEEEEEEEKf   iiEEEK
