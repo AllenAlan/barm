@@ -22,7 +22,7 @@ barm
 - [spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba)
 - [Dubbo](https://github.com/apache/dubbo)
 - [Nocas](https://github.com/alibaba/Nacos)
-- Leaf 
+- [Leaf](https://github.com/Meituan-Dianping/Leaf)
 - [SpringBoot](https://github.com/spring-projects/spring-boot)
 - [Mybatis](https://github.com/mybatis/mybatis-3)
 ## Features
@@ -31,19 +31,12 @@ barm
 - [x] 分布式 ID 
  ## TODO
 - [ ] 配置缓存
-
 - [ ] 配置消息队列
-
 - [ ] 分布式事务
-
 - [ ] 配置分布式锁
-
-- [ ] 分布式定时任务
-
+- [ ] 分布式任务调度
 - [ ] 配置配置中心
-
 - [ ] 配置分库分
-
     ... 未完待续
 ## END
 > 有任何疑问, 欢迎issues提问
