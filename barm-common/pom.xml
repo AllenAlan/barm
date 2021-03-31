@@ -12,7 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.16.20</lombok.version>
-        <guava.version>28.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <validation.api.version>2.0.1.Final</validation.api.version>
         <jackson.core.version>2.10.2</jackson.core.version>
         <dubbo.version>2.7.4.1</dubbo.version>
