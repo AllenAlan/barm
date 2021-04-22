@@ -39,7 +39,7 @@
         <druid.version>1.0.18</druid.version>
         <curator.version>4.0.1</curator.version>
         <mybatis-spring.version>1.2.5</mybatis-spring.version>
-        <mybatis.version>3.3.0</mybatis.version>
+        <mybatis.version>3.5.6</mybatis.version>
         <apache.dubbo.version>2.7.4.1</apache.dubbo.version>
     </properties>
 
