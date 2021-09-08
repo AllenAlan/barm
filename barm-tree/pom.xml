@@ -40,7 +40,7 @@
         <curator.version>4.0.1</curator.version>
         <mybatis-spring.version>1.2.5</mybatis-spring.version>
         <mybatis.version>3.3.0</mybatis.version>
-        <apache.dubbo.version>2.7.4.1</apache.dubbo.version>
+        <apache.dubbo.version>2.7.13</apache.dubbo.version>
     </properties>
 
     <dependencyManagement>
