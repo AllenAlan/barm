@@ -15,7 +15,7 @@
         <guava.version>28.1-jre</guava.version>
         <validation.api.version>2.0.1.Final</validation.api.version>
         <jackson.core.version>2.10.2</jackson.core.version>
-        <dubbo.version>2.7.4.1</dubbo.version>
+        <dubbo.version>2.7.13</dubbo.version>
     </properties>
 
     <dependencies>
