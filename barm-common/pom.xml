@@ -14,7 +14,7 @@
         <lombok.version>1.16.20</lombok.version>
         <guava.version>28.1-jre</guava.version>
         <validation.api.version>2.0.1.Final</validation.api.version>
-        <jackson.core.version>2.10.2</jackson.core.version>
+        <jackson.core.version>2.13.4.1</jackson.core.version>
         <dubbo.version>2.7.4.1</dubbo.version>
     </properties>
 
